@@ -16,6 +16,15 @@ jobs:
         run: |
           pwd
           ls -a
+      - name: Change dir
+        run: |
+          cd .github
+          cd workflows
+          ls -a
+      - name: List Files After CD
+        run: |
+          pwd
+          ls -a
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
