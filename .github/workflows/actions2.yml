@@ -21,10 +21,9 @@ jobs:
           cd .github
           cd workflows
           ls -a
-      - name: List Files After CD
+      - name: Print env var
         run: |
-          pwd
-          ls -a
+          printenv
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
